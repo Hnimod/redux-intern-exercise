@@ -78,11 +78,16 @@ const Registry = () => {
     actions.setTouched({});
   };
 
+  const sleep = (ms: number) => {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  };
+
   const submitInfoStep = async (
     values: FormValues,
     actions: FormikHelpers<FormValues>
   ) => {
-    alert('Register Successfully');
+    await sleep(1000);
+    alert(JSON.stringify(values, null, 2));
     actions.setSubmitting(false);
   };
 

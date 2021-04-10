@@ -1,10 +1,8 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import coutnerReducer from '../features/counter/counterSlice';
 import registryReducer from '../features/registry/registrySlice';
 
 export const store = configureStore({
   reducer: {
-    counter: coutnerReducer,
     registry: registryReducer,
   },
 });
