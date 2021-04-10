@@ -81,7 +81,7 @@ const Info = ({ formModel }: Props) => {
         <p>Upload profile picture</p>
       </div>
       <div className={styles.button}>
-        <FormButton submit />
+        <FormButton />
       </div>
     </>
   );
